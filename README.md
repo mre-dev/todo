@@ -38,7 +38,7 @@
         <li> Select your API.</a></li>
         <li> Click on <strong>New resource</strong>.</li>
         <li> On the page that opens, in the <b>Resource Name</b> field, write the phrase <b>todos</b>.</li>
-        <li> Then create your fields in the Schema section according to the table below</li>
+        <li> Then create your fields in the Schema section according to the table below and click on create button.</li>
         </br>
         <table align="left">
             <thead>
@@ -80,6 +80,8 @@
         </table>
     </ol>
 </div>
+
+</br></br></br></br></br></br></br></br></br></br></br>
 
 <h2></h2>
 
