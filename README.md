@@ -16,7 +16,7 @@
 
 <h2></h2>
 
-<p align="center"><a href="https://mre-dev.github.io/Todo/">----- Click To View Demo -----</a></p>
+<p align="center"><a href="https://mre-dev.github.io/todo/">----- Click To View Demo -----</a></p>
 
 <h2></h2>
 
