@@ -26,9 +26,9 @@
 <div>
     <p>Steps to build a dedicated API :</p>
     <ul>
-        <li>1. First, register at <a href="https://mockapi.io/">mockapi.io.</a></li>
-        <li>2. Then click on the + sign to add a new API.</li>
-        <li>3. Choose a custom name for your API and create the API.</li>
+        <li style="list-style: none;">1. First, register at <a href="https://mockapi.io/">mockapi.io.</a></li>
+        <li style="list-style: none;">2. Then click on the + sign to add a new API.</li>
+        <li style="list-style: none;">3. Choose a custom name for your API and create the API.</li>
     </ul>
     </br>
     <p>Now you need to create your API fields :</p>
@@ -39,10 +39,10 @@
         <li>4. Then create your fields in the Schema section according to the table below</li>
         <table>
             <thead>
-                <th>
+                <tr>
                     <td>Field Name</td>
                     <td>Field Type</td>
-                </th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
