@@ -38,46 +38,48 @@
         <li> Select your API.</a></li>
         <li> Click on <strong>New resource</strong>.</li>
         <li> On the page that opens, in the <b>Resource Name</b> field, write the phrase <b>todos</b>.</li>
-        <li> Then create your fields in the Schema section according to the table below and click on create button.</li>
+        <li> Then create your fields in the Schema section according to the table below and click on create button.
         </br>
-        <table align="left">
-            <thead>
-                <tr>
-                    <td>Field Name</td>
-                    <td>Field Type</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>id</td>
-                    <td>Object ID</td>
-                </tr>
-                <tr>
-                    <td>title</td>
-                    <td>String</td>
-                </tr>
-                <tr>
-                    <td>description</td>
-                    <td>String</td>
-                </tr>
-                <tr>
-                    <td>dueDate</td>
-                    <td>String</td>
-                </tr>
-                <tr>
-                    <td>checked</td>
-                    <td>Boolean</td>
-                </tr>
-                <tr>
-                    <td>createdAt</td>
-                    <td>Date</td>
-                </tr>
-                <tr>
-                    <td>updatedAt</td>
-                    <td>Date</td>
-                </tr>
-            </tbody>
-        </table>
+                <table align="left">
+                <thead>
+                    <tr>
+                        <td>Field Name</td>
+                        <td>Field Type</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>id</td>
+                        <td>Object ID</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td>String</td>
+                    </tr>
+                    <tr>
+                        <td>description</td>
+                        <td>String</td>
+                    </tr>
+                    <tr>
+                        <td>dueDate</td>
+                        <td>String</td>
+                    </tr>
+                    <tr>
+                        <td>checked</td>
+                        <td>Boolean</td>
+                    </tr>
+                    <tr>
+                        <td>createdAt</td>
+                        <td>Date</td>
+                    </tr>
+                    <tr>
+                        <td>updatedAt</td>
+                        <td>Date</td>
+                    </tr>
+                </tbody>
+            </table>
+        </li>
+        </br>
     </ol>
 </div>
 
