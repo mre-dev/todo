@@ -25,12 +25,6 @@
 
 </br>
 
-<style>
-    table {
-        width: 100%;
-    }
-</style>
-
 <div>
     <p>Steps to build a dedicated API :</p>
     <ol>
@@ -46,7 +40,7 @@
         <li> On the page that opens, in the <b>Resource Name</b> field, write the phrase <b>todos</b>.</li>
         <li> Then create your fields in the Schema section according to the table below</li>
         </br>
-        <table>
+        <table align="left">
             <thead>
                 <tr>
                     <td>Field Name</td>
@@ -86,3 +80,7 @@
         </table>
     </ol>
 </div>
+
+<h2></h2>
+
+<p>Screenshot :</p>
