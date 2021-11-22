@@ -25,6 +25,12 @@
 
 </br>
 
+<style>
+    table {
+        width: 100%;
+    }
+</style>
+
 <div>
     <p>Steps to build a dedicated API :</p>
     <ol>
