@@ -23,7 +23,9 @@
 <p>
 <strong>To-Do API : </strong>You can Create a free API from <a href="https://mockapi.io/">mockapi.io</a></p>
 
-<div>
+</br>
+
+<div align="center">
     <p>Steps to build a dedicated API :</p>
     <ol>
         <li> First, register at <a href="https://mockapi.io/">mockapi.io.</a></li>
@@ -37,7 +39,8 @@
         <li> Click on <strong>New resource</strong>.</li>
         <li> On the page that opens, in the <b>Resource Name</b> field, write the phrase <b>todos</b>.</li>
         <li> Then create your fields in the Schema section according to the table below</li>
-        <table>
+        </br>
+        <table width="100%">
             <thead>
                 <tr>
                     <td>Field Name</td>
