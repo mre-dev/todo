@@ -25,7 +25,7 @@
 
 </br>
 
-<div align="center">
+<div>
     <p>Steps to build a dedicated API :</p>
     <ol>
         <li> First, register at <a href="https://mockapi.io/">mockapi.io.</a></li>
@@ -40,7 +40,7 @@
         <li> On the page that opens, in the <b>Resource Name</b> field, write the phrase <b>todos</b>.</li>
         <li> Then create your fields in the Schema section according to the table below</li>
         </br>
-        <table width="100%">
+        <table>
             <thead>
                 <tr>
                     <td>Field Name</td>
