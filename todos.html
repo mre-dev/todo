@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Todo List Manager">
+    <meta name="author" content="Mohammad Reza Ebrahimi">
+    <title>ToDo List - All Item</title>
+    <script src="assets/js/showTodos.js" defer></script>
+    <link rel="stylesheet" href="assets/css/compiled css/header_sytle.css">
+    <link rel="stylesheet" href="assets/css/compiled css/todo_style.css">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+</head>
+<body>
+    <div id="body">
+        <div class="container header">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="todos.html?page=1&limit=10" class="active">Todos</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="container todoMainDiv">
+            <div class="ToDo">
+                <h1>My Todo-s</h1>
+
+                <div class="items">
+                    <ul id="listItem">      
+                    </ul>
+                </div>
+                    
+                <div class="pagination">
+                    <ul id="paginationList">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="deleteBox" id="deleteBox">
+        <div class="del-header">
+            <img src="assets/img/error_480px.png" alt="Delete Icon">
+            <strong>Delete</strong>
+        </div>
+        <hr>
+        <div class="del-body">
+            <p>Do you want to delete this item ?</p>
+            <p id="itemTitle"></p>
+        </div>
+        <hr>
+        <div class="del-footer">
+            <button type="button" id="deleteItem" onclick="deleteItem(this.id);">Delete</button>
+            <button type="button" id="cancelDelete" onclick="deleteItem(this.id);">Cancel</button>
+        </div>
+    </div>
+
+</body>
+</html>

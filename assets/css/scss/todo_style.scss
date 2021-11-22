@@ -1,0 +1,301 @@
+@import "reset";
+@import "variables";
+
+.todoMainDiv {
+    height: 100vh;
+    background-color: $LightGray;
+    display: flex;
+    align-items: center;
+
+    .ToDo {
+        background-color: $MainColor;
+        width: 80%;
+        margin: 0 auto;
+        height: 80vh;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0rem 0rem 0.5rem 0.1rem #b7b7b7;
+    
+        hr {
+            color: $BlackColor;
+            background-color: $BlackColor;
+            width: 100%;
+            margin-top: 3rem;
+        }
+    
+        .items {
+            width: 100%;
+            overflow: scroll;
+            overflow-x: hidden;
+            height: 80%;
+    
+            #listItem {
+                padding-left: 0;
+                margin: 0 5rem;
+        
+                li {
+                    list-style-type: none;
+                    font-size: 2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    align-content: center;
+                    margin: 1rem 0;
+                    border: 0.1rem solid #adadad;
+                    border-radius: 0.5rem;
+                    padding: 1.5rem;
+                    flex-direction: column;
+                    padding-bottom: 0.5rem;
+                    box-shadow: 0rem 0rem 0.6rem 0.3rem $LightGray;
+                    background-color: $MainColor;
+        
+                    .top-item {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        width: 100%;
+
+                        .operation {
+                            display: flex;
+                            font-size: 3rem !important;
+        
+                            div:nth-child(1) svg {
+                                color: $BlueColor;
+                                padding: 0.5rem;
+                                cursor: pointer;
+                            }
+                            
+                            div:nth-child(2) svg {
+                                color: $RedColor;
+                                padding: 0.5rem;
+                                cursor: pointer;
+                            }
+                            
+                            div:nth-child(3) svg {
+                                padding: 0.5rem;
+                                cursor: pointer;
+                            }
+                            
+                            svg:hover {
+                                border: 0.1rem solid $SecondColor;
+                                border-radius: 0.5rem;
+                            }
+                        }
+        
+                        .checkedLine {
+                            text-decoration: line-through;
+                            color: $RedColor;
+                        }
+    
+                        .date {
+                            font-size: 1rem;
+                            margin-left: 1rem;
+                        }
+                    }
+
+                    .bottom-item {
+                        width: 100%;
+                        padding: 0 0.5rem;
+                        font-size: 1.4rem;
+
+                        .checkedLine {
+                            text-decoration: line-through;
+                            color: $RedColor;
+                        }
+                    }
+                }
+    
+                .borderItemEdit {
+                    border: 0.2rem solid $GreenColor !important;
+    
+                    .hiddenIcon {
+                        display: block !important;
+                    }
+                }
+                
+                .editInput {
+                    height: 2.5rem;
+                    border: none;
+                    outline: none;
+                    font-size: 2rem;
+                    color: #8e44ad;
+                }
+            }
+        }
+    
+        #addForm {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            
+            input {
+                height: 2rem;
+                width: 50%;
+                padding: 1rem;
+            }
+    
+            button {
+                width: 20%;
+                margin-left: 2rem;
+                background-color: $SecondColor;
+                color: $MainColor;
+                border: 0;
+                outline: none;
+                cursor: pointer;
+                border-radius: 0.5rem;
+                transition: 1s;
+    
+                &:hover {
+                    font-size: 1.5rem;
+                    transition: 1s;
+                    background-color: $BlueColor;
+                }
+            }
+        }
+
+        .pagination {
+            text-align: center;
+            width: 90%;
+            margin: 0 5rem;
+            margin-top: 2rem;
+
+            #paginationList {
+                display: flex;
+                justify-content: center;
+                /*flex-wrap: wrap;*/
+                overflow-x: auto;
+                align-content: center;
+                gap: 0.3rem;
+                padding: 0;
+                width: 100%;
+
+                li {
+                    list-style-type: none;
+                    background-color: $BlueColor;
+                    border-radius: 0.5rem;
+
+                    a {
+                        text-decoration: none;
+                        color: $MainColor;
+                        padding: 1rem;
+                        display: inline-block;
+                        padding: 0.5rem 0.8rem;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.deleteBox {
+    display: none;
+    height: 20rem;
+    width: 35rem;
+    background: $MainColor;
+    position: absolute;
+    border-radius: 0.5rem;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border: 0.1rem solid #a3a3a3;;
+
+    .del-header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0.5rem 0 0 0.5rem;
+
+        img {
+            height: 4rem;
+        }
+
+        strong {
+            font-size: 2rem;
+            margin-left: 1rem;
+        }
+    }
+
+    .del-body {
+        p {
+            font-size: 1.6rem;
+            padding: 0 0 0.5rem 1rem;
+            font-weight: 600;
+        }
+
+        #itemTitle {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
+
+    .del-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 1.2rem;
+
+        button {
+            width: 45%;
+            background-color: $MainColor;
+            border: 0.25rem solid $BlackColor;
+            outline: 0;
+            box-shadow: 0.1rem 0.1rem 0rem 0.05rem $BlackColor;
+            height: 3rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.showDisplay {
+    display: block;
+}
+
+.grayBackground {
+    opacity: 0.3;
+}
+
+@media screen and (max-width: 500px) {
+    .todoMainDiv .ToDo {
+        width: 95%;
+
+        .items #listItem {
+            margin: 0 2rem;
+        }
+    }
+
+    .deleteBox {
+        height: 23rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .deleteBox {
+        height: 25rem;
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 240px){
+    .deleteBox {
+        height: 28rem;
+        width: 20rem;
+        text-align: center;
+
+        .del-body p {
+            padding: 0;
+        }
+    }
+}

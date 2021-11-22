@@ -1,0 +1,210 @@
+@import "reset";
+@import "variables";
+
+body {
+    background-color: $LightGray;
+}
+
+.ToDo {
+    text-align: center;
+    background-color: $MainColor;
+    width: 80%;
+    margin: 0 auto;
+    height: 70vh;
+    border-radius: 1rem;
+    margin-top: 8rem;
+    padding-top: 1rem;
+    box-shadow: 0rem 0rem 0.5rem 0.1rem #b7b7b7;
+
+    #addForm {
+
+        #submitInput{
+            width: 50%;
+            margin-top: 3rem;
+            height: 4rem;
+            padding: 0;
+            border: 0;
+            background-color: $BlueColor;
+            box-shadow: 0.2rem 0.2rem 0rem 0.1rem $SecondColor;
+            color: $MainColor;
+            font-size: 1.6rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .inputDiv {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 50%;
+            margin: 0 auto;
+            gap: 0.5rem;
+            margin-top: 3rem;
+
+            input {
+                width: 100%;
+                height: 4rem;
+                padding: 0rem 0rem 0rem 1rem;
+                border-radius: 0.5rem;
+                border: 0.1rem solid $LightGray;
+                box-shadow: 0rem 0rem 0.1rem 0.1rem #b7b7b7;
+            }
+
+            label {
+                font-family: 'Lato';
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+#TitleError , #DateError{
+    color: $RedColor;
+    display: none;
+    font-size: 1.1rem;
+}
+
+.ChangeBorder {
+    border: 1px solid $RedColor !important;
+    animation: shake 0.5s;
+}
+
+.ChangeColor {
+    color: $RedColor;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+#message {
+    height: 8rem;
+    width: 25rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.hideMessage {
+    display: none;
+}
+
+.success {
+    background-color: #0a9c0a;
+    border: 0.3rem solid #035e03;
+
+    #messageTitle{
+        color: $MainColor;
+        font-family: 'Lato';
+        font-size: 1.6rem;
+        display: inline-block;
+        padding: 0.5rem 0 0 0.5rem;
+        font-weight: 700;
+    }
+
+    #messageText {
+        color: $MainColor;
+        font-family: 'Lato';
+        font-size: 1.6rem;
+        display: inline-block;
+        margin-top: 0.5rem;
+        font-weight: 700;
+        padding-left: 0.5rem;
+    }
+
+    #messageClose {
+        color: $MainColor;
+        font-family: 'Lato';
+        font-size: 1.6rem;
+        font-weight: 700;
+        position: absolute;
+        left: 22rem;
+        bottom: 5rem;
+        border: 0.1rem solid $MainColor;
+        border-radius: 50%;
+        width: 2rem;
+        padding-left: 0.38rem;
+        padding-bottom: 0.1rem;
+        cursor: pointer;
+    }
+}
+
+.error {
+    background-color: #ce0125;
+    border: 0.3rem solid #6e0606;
+
+    #messageTitle{
+        color: $MainColor;
+        font-family: 'Lato';
+        font-size: 1.6rem;
+        display: inline-block;
+        padding: 0.5rem 0 0 0.5rem;
+        font-weight: 700;
+    }
+
+    #messageText {
+        color: $MainColor;
+        font-family: 'Lato';
+        font-size: 1.6rem;
+        display: inline-block;
+        margin-top: 0.5rem;
+        font-weight: 700;
+        padding-left: 0.5rem;
+    }
+
+    #messageClose {
+        color: $MainColor;
+        font-family: 'Lato';
+        font-size: 1.6rem;
+        font-weight: 700;
+        position: absolute;
+        left: 22rem;
+        bottom: 5rem;
+        border: 0.1rem solid $MainColor;
+        border-radius: 50%;
+        width: 2rem;
+        padding-left: 0.38rem;
+        padding-bottom: 0.1rem;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ToDo #addForm {
+        #submitInput, .inputDiv {
+            width: 75%;
+        }
+    }
+}
+
+@media screen and (max-width: 240px) {
+    .ToDo {
+        height: 135vh;
+        margin-bottom: 2rem;
+        
+        #addForm #submitInput, #addForm .inputDiv {
+            width: 95%;
+        }
+    }
+
+    #message {
+        height: 10rem;
+        width: 20rem;
+
+        #messageClose {
+            left: 16rem;
+            bottom: 7rem;
+        }
+    }
+}

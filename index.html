@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Todo List Manager">
+    <meta name="author" content="Mohammad Reza Ebrahimi">
+    <title>ToDo List - Add new item</title>
+    <script src="assets/js/addNewItem.js" defer></script>
+    <link rel="stylesheet" href="assets/css/compiled css/header_sytle.css">
+    <link rel="stylesheet" href="assets/css/compiled css/add_style.css">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+</head>
+<body>
+
+    <div class="container header">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="todos.html?page=1&limit=10">Todos</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="ToDo">
+            <h1>Add New Todo</h1>
+
+            <form id="addForm">
+
+                <div class="inputDiv">
+                    <label for="inputText" id="InputTextLabel">Title *</label>
+                    <input id="inputText" name="inputText" type="text" placeholder="What will you do today ?">
+                    <span id="TitleError">the title is required</span>
+                </div>
+
+                <div class="inputDiv">
+                    <label for="inputDescription">Description</label>
+                    <input id="inputDescription" name="inputDescription" type="text" placeholder="Some Inormation">
+                </div>
+
+                <div class="inputDiv">
+                    <label for="inputDueDate" id="InputDateLabel">Due Date *</label>
+                    <input id="inputDueDate" name="inputDueDate" type="date">
+                    <span id="DateError">the date is required</span>
+                </div>
+
+                <button type="submit" id="submitInput">ADD</button>
+
+            </form>
+                        
+        </div>
+    </div>
+
+    <div class="message hideMessage" id="message">
+        <span id="messageTitle"></span>
+        <span id="messageClose" onclick="closeMessage();">X</span>
+        <hr>
+        <p id="messageText"></p>
+    </div>
+
+</body>
+</html>

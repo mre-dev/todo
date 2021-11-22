@@ -1,0 +1,43 @@
+@import "reset";
+@import "variables";
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: $MainColor;
+    height: 5rem;
+    top: 0;
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        gap: 5rem;
+        height: 100%;
+        margin-top: 1.5rem;
+
+        li {
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                font-size: 1.6rem;
+                color: $BlackColor;
+                padding: 1rem;
+
+                &:hover {
+                    background-color: $BlueColor;
+                    color: $MainColor;
+                    border-radius: 0.5rem;
+                }
+
+                &.active {
+                    background-color: $BlueColor;
+                    color: $MainColor;
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+    }
+}
