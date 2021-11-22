@@ -35,12 +35,12 @@
     </br>
     <p>Now you need to create your API fields :</p>
     <ol>
-        <li> Select your API.</a></li>
+        <li> Select your API.</li>
         <li> Click on <strong>New resource</strong>.</li>
         <li> On the page that opens, in the <b>Resource Name</b> field, write the phrase <b>todos</b>.</li>
         <li> Then create your fields in the Schema section according to the table below and click on create button.
-        </br>
-                <table align="left">
+        </br></br>
+            <table align="left">
                 <thead>
                     <tr>
                         <td>Field Name</td>
@@ -79,7 +79,7 @@
                 </tbody>
             </table>
         </li>
-        </br>
+        <li> Then copy the <b>endpoint API</b> address and paste it in the <b>BASE_URL</b> variable in the assets/js/showTodos.js and, assets/js/addNewItem.js files. (line two in both files)</li>
     </ol>
 </div>
 
