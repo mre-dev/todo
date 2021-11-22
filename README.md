@@ -87,3 +87,8 @@
 <h2></h2>
 
 <p>Screenshot :</p>
+
+<div align="center">
+    <img src="assets/img/screen1.png" alt="Add Todo Page Image" width="39%">
+    <img src="assets/img/screen2.png" alt="All Todo Page Image" width="59%">
+</div>
