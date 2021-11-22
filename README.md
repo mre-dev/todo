@@ -79,11 +79,10 @@
                 </tbody>
             </table>
         </li>
+        </br></br></br></br></br></br></br></br></br></br></br></br></br></br>
         <li> Then copy the <b>endpoint API</b> address and paste it in the <b>BASE_URL</b> variable in the assets/js/showTodos.js and, assets/js/addNewItem.js files. (line two in both files)</li>
     </ol>
 </div>
-
-</br></br></br></br></br></br></br></br></br></br></br>
 
 <h2></h2>
 
