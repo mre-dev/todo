@@ -26,17 +26,17 @@
 <div>
     <p>Steps to build a dedicated API :</p>
     <ul>
-        <li>1. First, register at <a href="https://mockapi.io/">mockapi.io.</a><li>
-        <li>2. Then click on the + sign to add a new API.<li>
-        <li>3. Choose a custom name for your API and create the API.<li>
+        <li>1. First, register at <a href="https://mockapi.io/">mockapi.io.</a></li>
+        <li>2. Then click on the + sign to add a new API.</li>
+        <li>3. Choose a custom name for your API and create the API.</li>
     </ul>
     </br>
     <p>Now you need to create your API fields :</p>
     <ul>
-        <li>1. Select your API.</a><li>
-        <li>2. Click on <strong>New resource</strong>.<li>
-        <li>3. On the page that opens, in the <b>Resource Name</b> field, write the phrase <b>todos</b>.<li>
-        <li>4. Then create your fields in the Schema section according to the table below<li>
+        <li>1. Select your API.</a></li>
+        <li>2. Click on <strong>New resource</strong>.</li>
+        <li>3. On the page that opens, in the <b>Resource Name</b> field, write the phrase <b>todos</b>.</li>
+        <li>4. Then create your fields in the Schema section according to the table below</li>
         <table>
             <thead>
                 <th>
